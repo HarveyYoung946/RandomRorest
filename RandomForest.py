@@ -70,7 +70,7 @@ print(scores3.mean())
 #变量相应重要性
 #print(last_clf.feature_importances_)
 #last_clf.predict(x_test)
-#绘制图形
+#绘制图形，graphviz安装教程见https://www.pythonf.cn/read/129001
 import graphviz
 dot_data = tree.export_graphviz(last_clf,out_file=None,filled=True,rounded=True)
 graph = graphviz.Source(dot_data)
